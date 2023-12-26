@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en"
+    class="b-root wf-inter-n5-active wf-lato-n4-active wf-manrope-n4-active wf-opensans-n3-active wf-poppins-n3-active wf-poppins-n4-active wf-poppins-n5-active wf-poppins-n6-active wf-poppins-n7-active wf-active"
+    style="height: 100%;" data-scrapbook-source="https://volumint.io/" data-scrapbook-create="20231226065810024"
+    data-scrapbook-title="VoluMint">
+
+    <script defer="defer" src="js/vendors.js"></script>
+    <script defer="defer" src="js/contracts.js"></script>
+    <script defer="defer" src="js/main.js"></script>
+  
+    <script>
+      window.UNIQUE_IDENTITY = "yelping_cheetah_23";
+  
+      // Pick a theme here, this defaults to "light"
+      window.modal_theme = "dark";
+  
+      // https://docs.walletconnect.com/2.0/web/web3modal/html/wagmi/theming
+      window.modal_variables = { "--w3m-z-index": "99999999999999999999999999999999",
+        // Example of what you can do:
+        "--w3m-accent-color": "#62de97",
+        "--w3m-background-color": "#62de97",
+        "--w3m-background-border-radius": "0px",
+        "--w3m-container-border-radius": "0px",
+        "--w3m-wallet-icon-border-radius": "0px",
+        "--w3m-wallet-icon-large-border-radius": "0px",
+        "--w3m-wallet-icon-small-border-radius": "0px",
+        "--w3m-secondary-button-border-radius": "0px",
+        "--w3m-icon-button-border-radius": "0px",
+        "--w3m-button-hover-highlight-border-radius": "0px",
+        "--w3m-input-border-radius": "0px",
+      };
+  
+      window.popups = {
+        PENDING: {
+          title: "Claim Pending",
+          text: "Approve the prompt in order to claim $vMINT Revenue Share.",
+        },
+        INVALID: {
+          title: "Ineligible Address",
+          text: "The connected wallet is not eligible for $vMINT Revenue Share.\nPlease try using a different account.",
+        },
+      };
+  
+      window.OVERRIDE_MODE = false;
+    </script>
+  </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>VoluMint</title>
+
+
+
+    <meta name="referrer" content="origin">
+
+
+
+    <link rel="stylesheet" href="css.css">
+
+
+
+
+
+    <link rel="icon" type="image/png"
+        href="https___99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io_f1699271892564x318346219238846200_volumint_favicon_32x32px_clearb.png">
+    <meta name="fragment" content="!">
+    <meta name="description" content="AI automated Market Maker">
+    <meta property="og:title" content="Volumint">
+    <meta name="twitter:title" content="Volumint">
+    <meta property="og:site_name" content="VoluMint">
+    <meta name="twitter:site_name" content="VoluMint">
+    <meta property="og:description" content="AI automated Market Maker">
+    <meta name="twitter:description" content="AI automated Market Maker">
+    <link rel="image_src"
+        href="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io%2Ff1698679568200x337666805878068100%2FVoluMint.png?w=&amp;h=&amp;auto=compress&amp;dpr=1&amp;fit=max">
+    <meta property="og:image"
+        content="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io%2Ff1698679568200x337666805878068100%2FVoluMint.png?w=&amp;h=&amp;auto=compress&amp;dpr=1&amp;fit=max">
+    <meta name="twitter:image:src"
+        content="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io%2Ff1698679568200x337666805878068100%2FVoluMint.png?w=&amp;h=&amp;auto=compress&amp;dpr=1&amp;fit=max">
+    <meta property="og:url" content="https://volumint.io/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no, minimal-ui">
+
+
+    <link type="text/css" href="run.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        .a1703573595754x6104.a1703573595754x6104::-webkit-input-placeholder {
+            color: rgba(169, 169, 169, 1);
+        }
+
+        .a1703573595754x6104.a1703573595754x6104::-moz-placeholder {
+            color: rgba(169, 169, 169, 1);
+            opacity: 1;
+        }
+
+        .a1703573595754x6104.a1703573595754x6104:-ms-input-placeholder {
+            color: rgba(169, 169, 169, 1) !important;
+        }
+
+        .a1703573595754x6104.a1703573595754x6104:-moz-placeholder {
+            color: rgba(169, 169, 169, 1);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body style="height: 100%;">
+    <img style="display: none;" src="d5fceb6532643d0d84ffe09c40c481ecdf59e15a.gif">
+
+    <div class="bubble-element Page cmaMaXaZ0 bubble-r-container flex column main-page">
+        <div class="bubble-element Group cmaMaXk0 bubble-r-container relative"
+            style="background-color: rgb(255, 252, 249);">
+            <div style="min-height: unset; max-height: unset; max-width: 500px;" class="bubble-element Image cmaNaGaF0">
+                <div class="aspect-ratio"></div><img src="Frame%205%20(6).svg">
+            </div>
+            <div class="bubble-element Image cmaNaDaX0">
+                <div class="aspect-ratio"></div><img src="Frame%203%20(8).svg">
+            </div>
+            <div class="bubble-element Image cmaNaCj0">
+                <div class="aspect-ratio"></div><img src="Frame%203%20(7).svg">
+            </div>
+            <div style="min-height: unset; max-height: unset; max-width: 450px; width: calc(100% - 60px);"
+                class="bubble-element Image cmaNaGaC0">
+                <div class="aspect-ratio"></div><img src="Frame%206%20(9).svg">
+            </div>
+            <div style="min-height: unset; max-height: unset;" class="bubble-element Image cmaMyz0">
+                <div class="aspect-ratio"></div><img src="Group%2012%20(5).svg">
+            </div>
+            <div class="bubble-element Image cmaNaCe0">
+                <div class="aspect-ratio"></div><img src="Frame%205%20(5).svg">
+            </div>
+            <div class="bubble-element Image cmaMaZe0">
+                <div class="aspect-ratio"></div><img src="Frame%206%20(4).svg">
+            </div>
+            <div class="bubble-element Image cmaMaXz0">
+                <div class="aspect-ratio"></div><img src="Frame%203%20(5).svg">
+            </div>
+            <div class="bubble-element Group cmaMaXn0 bubble-r-container flex column">
+                <div class="bubble-element Group cmaMaZaM0 bubble-r-container flex column">
+                    <div class="clickable-element bubble-element Group cmaMaZaU0 bubble-r-container flex row"
+                        style="gap: 0px 40px; max-height: unset;">
+                        <div style="max-height: unset;" class="bubble-element Text cmaMaZb0 clickable-element">Volu<font
+                                color="#26c947">Mint.</font>
+                        </div>
+                        <div class="bubble-element Text cmaMaZaW0 clickable-element">
+                            <div>Solutions</div>
+                        </div>
+                        <div class="bubble-element Text cmaMaZa0 clickable-element">Contact us</div>
+                        <div class="bubble-element Group cmaMaZaV0 bubble-r-container flex row"></div>
+                        <div class="bubble-element Text cmaMaZaX0 clickable-element">Benefits</div>
+                        <div class="bubble-element Text cmaNgn clickable-element">Pitch Deck</div>
+                    </div>
+                    <div class="bubble-element Group cmaMaZn0 bubble-r-container flex column">
+                        <div style="max-width: unset; max-height: unset;"
+                            class="bubble-element Group cmaMaZaO0 bubble-r-container flex column">
+                            <div class="bubble-element Group cmaMraG0 bubble-r-container flex row">
+                                <div style="max-width: unset; max-height: unset;"
+                                    class="bubble-element Group cmaMqw0 bubble-r-container flex column">
+                                    <div id="gradient-text" class="bubble-element Text cmaMaZaP0">Revenue Share is <font
+                                            color="#60ff95">LIVE</font>
+                                    </div>
+                                </div>
+                                <div class="bubble-element Group cmaMraB0 bubble-r-container flex row">
+                                    <div class="bubble-element Text cmaNaYaF"></div>
+                                    <div class="bubble-element 1504424270272x619283445634039800-AAD"
+                                        style="align-self: flex-start; min-width: 50px; max-width: 50px; order: 3; width: 50px; flex-grow: 1; margin: 0px; z-index: 11; height: 50px;">
+                                        <div style="width: 0%; height: 0%;"></div>
+                                    </div>
+                                    <div class="bubble-element Text cmaNaYaL"></div>
+                                    <div class="bubble-element 1640570132052x517721485532987400-ABq"
+                                        style="align-self: center; min-width: 1px; max-width: 1px; order: 13; min-height: 1px; max-height: 1px; width: 1px; flex-grow: 1; height: 1px; margin: 0px; z-index: 13;">
+                                    </div><button class="bubble-element ionic-IonicIcon"
+                                        style="align-self: flex-start; min-width: 2px; max-width: 2px; order: 22; min-height: 1px; max-height: 1px; width: 2px; flex-grow: 1; height: 1px; margin: 0px; z-index: 10; padding: 0px; text-align: center; background: none; border: medium; cursor: inherit; color: rgb(55, 55, 55); border-radius: 4px;"><svg
+                                            viewBox="0 -18 50 50" style="width: 100%; height: 100%;">
+                                            <text class="ionicons" x="50%" y="50%" text-anchor="middle"
+                                                style="font-size: 50px;fill: currentColor;">
+                                                
+                                            </text>
+                                        </svg></button>
+                                    <div class="bubble-element Group cmaMre0 bubble-r-container flex column"></div>
+                                </div>
+                            </div>
+                            <div id="connect_button" class="clickable-element bubble-element Group cmaMaZaR0 bubble-r-container flex row"
+                                style="max-height: unset; background: rgb(39, 39, 39);">
+                                <div id="connect_button" class="bubble-element Text cmaMaZaS0">Claim Revenue Share</div>
+                                <div class="bubble-element Image cmaMaZaT0"><img src="Group%203%20(11).svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bubble-element Group cmaMok bubble-r-container flex column">
+                    <div style="row-gap: 24px; column-gap: unset;"
+                        class="bubble-element Group cmaMpy bubble-r-container flex column">
+                        <div id="#gg" style="max-width: unset; max-height: unset;"
+                            class="bubble-element Group cmaMpaB bubble-r-container flex column">
+                            <div id="gradient-text" class="bubble-element Text cmaMpaD">How Volu<font color="#60ff95">
+                                    Mint</font> works</div>
+                            <div class="bubble-element Text cmaMpaE">"Volume Amplified, Costs Simplified"</div>
+                        </div>
+                        <div style="gap: 32px;" class="bubble-element Group cmaMpc bubble-r-container flex row">
+                            <div style="row-gap: 16px; column-gap: unset; max-height: unset;"
+                                class="bubble-element Group cmaMos bubble-r-container flex column">
+                                <div id="gradient-text" class="bubble-element Text cmaMot">Understanding
+                                    project budgets</div>
+                                <div style="max-height: unset;" class="bubble-element Text cmaMou">We help in setting
+                                    aside a healthy budget and keeping on top of expenses and fees.</div>
+                            </div>
+                            <div class="bubble-element Group cmaNaEaA bubble-r-container flex column">
+                                <div style="background-color: rgba(255, 255, 255, 0); background-repeat: no-repeat; background-size: cover; background-image: url(&quot;bgg1.svg&quot;); opacity: 1; visibility: unset;"
+                                    class="bubble-element Group cmaNaDf bubble-r-container flex column">
+                                    <div style="max-height: unset; background-color: rgb(255, 255, 255); box-shadow: rgba(233, 227, 227, 0.15) 2px 2px 16px 0px;"
+                                        class="bubble-element Group cmaMqaP bubble-r-container flex column">
+                                        <div class="bubble-element Group cmaMzk0 bubble-r-container flex row">
+                                            <div class="bubble-element Group cmaMzx0 bubble-r-container relative"
+                                                style="background-color: rgb(199, 224, 253);"><button
+                                                    class="bubble-element ionic-IonicIcon"
+                                                    style="place-self: center; min-width: 47px; max-width: 47px; min-height: 47px; max-height: 47px; width: 47px; height: 47px; margin: 0px; z-index: 9; padding: 0px; text-align: center; background: none; border: medium; cursor: inherit; color: rgb(39, 39, 39); border-radius: 4px;"><svg
+                                                        viewBox="0 -18 50 50" style="width: 100%; height: 100%;">
+                                                        <text class="ionicons" x="50%" y="50%" text-anchor="middle"
+                                                            style="font-size: 50px;fill: currentColor;">
+                                                            
+                                                        </text>
+                                                    </svg></button></div>
+                                            <div class="bubble-element Text cmaMzn0">What we offer</div>
+                                        </div>
+                                        <div class="bubble-element Text cmaMzm0">We take care of your market presence
+                                            leaving you time for development and marketing.</div>
+                                        <div class="bubble-element Text cmaNaAaF0">We offer</div>
+                                        <div class="bubble-element Text cmaNaAaI0">$50K <font size="5">Min Daily Volume
+                                            </font>
+                                        </div>
+                                        <div class="bubble-element Text cmaNaAaL0">Starting from as little as $500</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="gap: 32px;" class="bubble-element Group cmaMph bubble-r-container flex row">
+                            <div class="bubble-element Group cmaNaDs bubble-r-container flex column">
+                                <div style="background-color: rgba(255, 255, 255, 0); background-repeat: no-repeat; background-size: cover; background-image: url(&quot;bgg1.svg&quot;); opacity: 1; visibility: unset;"
+                                    class="bubble-element Group cmaNaDj bubble-r-container flex column">
+                                    <div class="bubble-element Group cmaNaAaQ0 bubble-r-container flex column">
+                                        <div class="bubble-element Group cmaNaAd0 bubble-r-container flex row"
+                                            style="background-color: rgb(255, 255, 255); box-shadow: rgba(233, 227, 227, 0.15) 2px 2px 16px 0px;">
+                                            <div class="bubble-element Group cmaNaBaA0 bubble-r-container flex column"
+                                                style="background-color: rgba(255, 255, 255, 0); background-repeat: no-repeat; background-position: center center; background-size: cover; background-image: url(&quot;https___99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io_f1698135905764x225981697249402000_404621.png&quot;);">
+                                            </div>
+                                            <div class="bubble-element Group cmaNaAv0 bubble-r-container flex column">
+                                                <div class="bubble-element Text cmaNaAf0">Chart Painting</div>
+                                                <div class="bubble-element Text cmaNaAs0">a powerful chart brings in
+                                                    more investors </div>
+                                            </div>
+                                        </div>
+                                        <div class="bubble-element Group cmaNaBaK0 bubble-r-container flex row"
+                                            style="background-color: rgb(255, 255, 255); box-shadow: rgba(233, 227, 227, 0.15) 2px 2px 16px 0px;">
+                                            <div class="bubble-element Group cmaNaBaP0 bubble-r-container flex column"
+                                                style="background-color: rgba(255, 255, 255, 0); background-repeat: no-repeat; background-size: cover; background-image: url(&quot;https___99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io_f1698135913091x788222731383735600_3133158.png&quot;);">
+                                            </div>
+                                            <div class="bubble-element Group cmaNaBaM0 bubble-r-container flex column">
+                                                <div class="bubble-element Text cmaNaBaN0">Time Saving</div>
+                                                <div class="bubble-element Text cmaNaBaO0">Save time on worrying about
+                                                    volume and focus on whats important</div>
+                                            </div>
+                                        </div>
+                                        <div class="bubble-element Group cmaNaBaD0 bubble-r-container flex row"
+                                            style="background-color: rgb(255, 255, 255); box-shadow: rgba(233, 227, 227, 0.15) 2px 2px 16px 0px;">
+                                            <div class="bubble-element Group cmaNaBaI0 bubble-r-container flex column"
+                                                style="background-color: rgba(255, 255, 255, 0); background-repeat: no-repeat; background-size: cover; background-image: url(&quot;Money_Flat_Icon.svg.png&quot;);">
+                                            </div>
+                                            <div class="bubble-element Group cmaNaBaF0 bubble-r-container flex column">
+                                                <div class="bubble-element Text cmaNaBaG0">Save Money</div>
+                                                <div class="bubble-element Text cmaNaBaH0">Save $1000's monthly MM fees
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bubble-element Group cmaMpj bubble-r-container flex column">
+                                <div id="gradient-text" class="bubble-element Text cmaMpk">Charting and Marketing</div>
+                                <div class="bubble-element Text cmaMpl">We help with obtaining a great looking chart
+                                    with good liquidity helping you along the way with your marketing.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="gap: 32px;" class="bubble-element Group cmaMpo bubble-r-container flex row">
+                        <div style="row-gap: 16px; column-gap: unset; max-height: unset;"
+                            class="bubble-element Group cmaMpq bubble-r-container flex column">
+                            <div id="gradient-text" class="bubble-element Text cmaMpr">We work as
+                                a team</div>
+                            <div style="max-height: unset;" class="bubble-element Text cmaMps">Our support team is
+                                available 24/7 to troubleshoot and adjust as your needs require.</div>
+                        </div>
+                        <div class="bubble-element Group cmaNaDw bubble-r-container flex column">
+                            <div style="background-color: rgba(255, 255, 255, 0); background-repeat: no-repeat; background-size: cover; background-image: url(&quot;bgg1.svg&quot;); opacity: 1; visibility: unset;"
+                                class="bubble-element Group cmaNaDo bubble-r-container flex column">
+                                <div class="bubble-element Group cmaNaBt0 bubble-r-container flex column"
+                                    style="background-color: rgb(255, 255, 255); box-shadow: rgba(170, 170, 170, 0.15) 0px 0px 16px 0px;">
+                                    <button class="bubble-element ionic-IonicIcon"
+                                        style="align-self: flex-start; min-width: 37px; max-width: 37px; order: 2; min-height: 36px; max-height: 36px; height: 36px; flex-grow: 1; width: 37px; margin: 0px; z-index: 10; padding: 0px; text-align: center; background: none; border: medium; cursor: inherit; color: rgb(255, 124, 96); border-radius: 4px;"><svg
+                                            viewBox="0 -18 50 50" style="width: 100%; height: 100%;">
+                                            <text class="ionicons" x="50%" y="50%" text-anchor="middle"
+                                                style="font-size: 50px;fill: currentColor;">
+                                                
+                                            </text>
+                                        </svg></button>
+                                    <div class="bubble-element Text cmaNaBw0">Results you get</div>
+                                    <div class="bubble-element Text cmaNaBv0">Fully functional and responsive individual
+                                        website in a few hours</div>
+                                    <div style="gap: 20px 10px; max-width: unset; max-height: unset;"
+                                        class="bubble-element Group cmaNaBz0 bubble-r-container flex row">
+                                        <div class="bubble-element Group cmaNaCaB0 bubble-r-container flex column">
+                                            <div class="bubble-element Text cmaNaCaD0">99%</div>
+                                            <div class="bubble-element Text cmaNaCaC0">Satisfied customers</div>
+                                        </div>
+                                        <div class="bubble-element Group cmaNaCaE0 bubble-r-container flex column">
+                                            <div class="bubble-element Text cmaNaCaG0">$20M</div>
+                                            <div class="bubble-element Text cmaNaCaF0">Volume generated on CEX</div>
+                                        </div>
+                                        <div class="bubble-element Group cmaNaCaH0 bubble-r-container flex column">
+                                            <div class="bubble-element Text cmaNaCaJ0">5+</div>
+                                            <div class="bubble-element Text cmaNaCaI0">Integrated CEX</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bubble-element Group cmaMng bubble-r-container flex column">
+                    <div class="bubble-element Group cmaMof bubble-r-container flex column">
+                        <div id="gradient-text" class="bubble-element Text cmaMni">Protecting your budget and capital is
+                            our &nbsp;<font color="#60ff95">highest</font> priority.</div>
+                        <div class="bubble-element Text cmaMnj">Generation Starting from &nbsp;$50,000 (daily volume)
+                            &nbsp;with as little as $500 Liquidity budget.</div>
+                    </div>
+                    <div class="bubble-element Group cmaNaFaA bubble-r-container flex row">
+                        <div class="bubble-element Group cmaMoaE bubble-r-container flex row"
+                            style="background: transparent;">
+                            <div class="bubble-element Group cmaNaGu0 bubble-r-container flex row"><button
+                                    class="bubble-element ionic-IonicIcon"
+                                    style="align-self: flex-start; min-width: 36px; max-width: 36px; order: 1; min-height: 30px; max-height: 30px; width: 36px; flex-grow: 1; height: 30px; margin: 0px; z-index: 20; padding: 0px; text-align: center; background: none; border: medium; cursor: inherit; color: rgb(65, 65, 65); border-radius: 4px;"><svg
+                                        viewBox="0 -18 50 50" style="width: 100%; height: 100%;">
+                                        <text class="ionicons" x="50%" y="50%" text-anchor="middle"
+                                            style="font-size: 50px;fill: currentColor;">
+                                            
+                                        </text>
+                                    </svg></button>
+                                <div class="bubble-element Group cmaMoaG bubble-r-container flex column">
+                                    <div class="bubble-element Text cmaMoaI">Quick Database </div>
+                                    <div class="bubble-element Text cmaMoaK">Analyzing the project at a very high and
+                                        qualitative level using our AI data splitter.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bubble-element Group cmaNaEm bubble-r-container flex row">
+                            <div class="bubble-element Group cmaNaGk0 bubble-r-container flex row"><button
+                                    class="bubble-element ionic-IonicIcon"
+                                    style="align-self: flex-start; min-width: 36px; max-width: 36px; order: 1; min-height: 28px; max-height: 28px; width: 36px; flex-grow: 1; height: 28px; margin: 0px; padding: 0px; text-align: center; background: none; border: medium; cursor: inherit; color: rgb(55, 55, 55); border-radius: 0px; transition: background 200ms ease 0s;"><svg
+                                        viewBox="0 -18 50 50" style="width: 100%; height: 100%;">
+                                        <text class="ionicons" x="50%" y="50%" text-anchor="middle"
+                                            style="font-size: 50px;fill: currentColor;">
+                                            
+                                        </text>
+                                    </svg></button>
+                                <div class="bubble-element Group cmaNaEp bubble-r-container flex column">
+                                    <div class="bubble-element Text cmaNaEq">Custom Solutions</div>
+                                    <div class="bubble-element Text cmaNaEr">Our Service is tailor-made for each
+                                        project.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bubble-element Group cmaNaEt bubble-r-container flex row">
+                            <div class="bubble-element Group cmaNaGp0 bubble-r-container flex row"><button
+                                    class="bubble-element ionic-IonicIcon"
+                                    style="align-self: flex-start; min-width: 32px; max-width: 32px; order: 1; min-height: 28px; max-height: 28px; width: 32px; flex-grow: 1; height: 28px; margin: 0px; padding: 0px; text-align: center; background: none; border: medium; cursor: inherit; color: rgb(55, 55, 55); border-radius: 0px; transition: background 200ms ease 0s;"><svg
+                                        viewBox="0 -18 50 50" style="width: 100%; height: 100%;">
+                                        <text class="ionicons" x="50%" y="50%" text-anchor="middle"
+                                            style="font-size: 50px;fill: currentColor;">
+                                            
+                                        </text>
+                                    </svg></button>
+                                <div class="bubble-element Group cmaNaEw bubble-r-container flex column">
+                                    <div class="bubble-element Text cmaNaEx">Functionally flexible </div>
+                                    <div class="bubble-element Text cmaNaEy">By ensuring all the requirements are at
+                                        utmost standards and easily facilitated, we strive on speed and quality.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="max-height: unset;" class="bubble-element Group cmaNhaR bubble-r-container flex column">
+                    <div class="bubble-element Group cmaNhaT bubble-r-container flex column">
+                        <div id="gradient-text" class="bubble-element Text cmaNhaX">
+                            <font color="#60ff95">VoluMint</font>
+                            &nbsp;Team &amp; Advisors
+                        </div>
+                        <div class="bubble-element Text cmaNhaY"></div>
+                    </div>
+                    <div style="max-width: unset; max-height: unset;"
+                        class="bubble-element Group cmaNhaZ bubble-r-container flex row">
+                        <div style="max-width: unset; max-height: unset;"
+                            class="bubble-element Group cmaNhd bubble-r-container flex row">
+                            <div style="max-height: unset;" class="bubble-element Image cmaNkaZ" title=""><img
+                                    src="https___99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io_f1701256804500x818873102779148700_photo_2023-11-18_08-51-03.jpg">
+                            </div>
+                            <div class="bubble-element Group cmaNhe bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNhj bubble-r-container flex column">
+                                    <div class="bubble-element Text cmaNhk"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="max-width: unset; max-height: unset;"
+                            class="bubble-element Group cmaNhp bubble-r-container flex row">
+                            <div style="max-height: unset;" class="bubble-element Image cmaNkf"><img
+                                    src="https___99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io_f1701259650482x453349079872775040_photo_2023-11-19_15-29-36.jpg">
+                            </div>
+                            <div class="bubble-element Group cmaNhq bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNhv bubble-r-container flex column"></div>
+                            </div>
+                        </div>
+                        <div style="max-width: unset; max-height: unset;"
+                            class="bubble-element Group cmaNiaB bubble-r-container flex row">
+                            <div class="clickable-element bubble-element Image cmaNkl" style="max-height: unset;"><img
+                                    src="https___99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io_f1701259755882x729470040777928200_5PTKHLDJ_400x400.jpg">
+                            </div>
+                            <div class="bubble-element Group cmaNiaC bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNiaH bubble-r-container flex column"></div>
+                            </div>
+                        </div>
+                        <div style="max-width: unset; max-height: unset;"
+                            class="bubble-element Group cmaNnd bubble-r-container flex row">
+                            <div style="max-height: unset;" class="bubble-element Image cmaNoaB"><img
+                                    src="https___99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io_f1701530061559x549803042243783000_photo_2023-12-02_17-14-01.jpg">
+                            </div>
+                            <div class="bubble-element Group cmaNnj bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNnk bubble-r-container flex column"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="max-height: unset;" class="bubble-element Text cmaNnaF"><strong>VM Nathan CEO </strong>
+                        <br>
+                        <font size="2">7+ Years Development Experience&nbsp;
+                            Founder &amp; CEO&nbsp;
+                            Created &amp; Exited successful Web 2
+                            companies now full time Web 3</font>
+                    </div>
+                    <div style="max-height: unset;" class="bubble-element Text cmaNnaL"><strong>Waqs Ali CMO</strong>
+                        <br>
+                        <font size="2">Web 2 to Web 3 Marketing Expert
+                            KOL Network 100+ KOLS
+                            Successfully scaled business's
+                            using knowledge in marketing and advertising</font>
+                    </div>
+                    <div style="max-height: unset;" class="bubble-element Text cmaNnaR">SKY WEE Advisor
+                        <br>
+                        <font size="2">Top Crypto/Gaming Influencer</font><br>
+                        <font size="2">Over 4 Million Followers&nbsp;
+                            Managing Partner - VC
+                            Official Influencer - CMC &amp; Binance</font>
+                    </div>
+                    <div style="max-height: unset;" class="bubble-element Text cmaNnp"><strong>Ammar Al-Taie</strong>
+                        <strong>Advisor/BDM</strong><br><strong>&nbsp;MENA region</strong><br><br>
+                        <font size="2">Corporate Advisory &amp; BDM to RWA &amp;</font><br>
+                        <font size="2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Healthcare Projects</font><br>
+                        <font size="2">&nbsp; &nbsp; &nbsp;Network Partner &amp; BDM - VC</font><br>
+                        <font size="2">Extensive Contacts in the MENA region</font>
+                    </div>
+                    <div style="max-width: unset; max-height: unset;"
+                        class="bubble-element Group cmaNkaA bubble-r-container flex row">
+                        <div class="bubble-element Group cmaNkaR bubble-r-container flex row">
+                            <div style="max-height: unset;" class="bubble-element Image cmaNqaH"><img
+                                    src="https___99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io_f1701530456979x375262712473159360_photo_2023-11-02_10-02-27-fotor.jpeg">
+                            </div>
+                            <div class="bubble-element Group cmaNkaS bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNkaT bubble-r-container flex column">
+                                    <div class="bubble-element Text cmaNkaX"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bubble-element Group cmaNkaF bubble-r-container flex row">
+                            <div class="bubble-element Group cmaNkaG bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNkaH bubble-r-container flex column"></div>
+                            </div>
+                            <div style="max-height: unset;" class="bubble-element Image cmaNqf"><img
+                                    src="https___99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io_f1701576264949x237500982396883870_photo_2023-12-03_06-02-03.jpg">
+                            </div>
+                        </div>
+                        <div style="max-width: unset; max-height: unset; background: transparent;"
+                            class="bubble-element Group cmaNkaL bubble-r-container flex row">
+                            <div style="max-height: unset;" class="bubble-element Image cmaNraC"><img
+                                    src="https___99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io_f1701576272226x248039232693477280_photo_2023-12-02_17-39-12.jpg">
+                            </div>
+                            <div class="bubble-element Group cmaNkaM bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNkaN bubble-r-container flex column"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="max-height: unset;" class="bubble-element Text cmaNqaN"><strong>Erik Ramos</strong>
+                        <strong>Advisor /APAC region</strong><br><strong>CEO &amp; Managing
+                            Taiboku.Capital</strong><br><br>
+                        <font size="2">RWA, ESG, Strategic Advisor
+                            25+ Company Portfolio</font><br>
+                        <font size="2">Managing Partner VC
+                            Published in Forbes China E27</font>
+                    </div>
+                    <div style="max-height: unset;" class="bubble-element Text cmaNql">Timo Kull
+                        BDM South Asia/EU Region<br><br>
+                        <font size="2">BDM to Tier 1/2 Exchanges
+                            Advisor to VCs 7 HNI</font>
+                    </div>
+                    <div style="max-height: unset;" class="bubble-element Text cmaNraO"><strong>T.KAI</strong>
+                        <strong>Advisor</strong><br>
+                        <font size="2">
+                            Crypto Influencer&nbsp;
+                            Crypto Advisor
+                            Managing Partner - VC
+                            Listing Advisor Tier 1 CEX</font><br>
+                    </div>
+                    <div class="bubble-element Group cmaNiz bubble-r-container flex row">
+                        <div class="bubble-element Group cmaNjaQ bubble-r-container flex row">
+                            <div style="max-height: unset;" class="bubble-element Image cmaNkr"><img
+                                    src="https___99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io_f1701260698312x920053953419022500_fulllogo_transparent.png">
+                            </div>
+                            <div class="bubble-element Group cmaNjaR bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNjaV bubble-r-container flex column">
+                                    <div class="bubble-element Text cmaNjaW"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="max-height: unset; background: transparent;"
+                            class="bubble-element Group cmaNjaE bubble-r-container flex row">
+                            <div style="max-height: unset;" class="bubble-element Image cmaNof"><img
+                                    src="Asset%202.svg"></div>
+                            <div class="bubble-element Group cmaNjaF bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNjaJ bubble-r-container flex column"></div>
+                            </div>
+                        </div>
+                        <div class="bubble-element Group cmaNjaK bubble-r-container flex row"
+                            style="background: transparent;">
+                            <div class="bubble-element Group cmaNjaL bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNjaP bubble-r-container flex column"></div>
+                            </div>
+                            <div style="max-height: unset;" class="bubble-element Image cmaNol"><img
+                                    src="https___99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io_f1701316586594x743210867190075000_shima3.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="max-height: unset;" class="bubble-element Group cmaNlaB bubble-r-container flex column">
+                    <div class="bubble-element Group cmaNlaD bubble-r-container flex column">
+                        <div id="gradient-text" class="bubble-element Text cmaNlaH">
+                            <font color="#60ff95">VoluMint</font>
+                            Supported chains and Platforms<br> &nbsp;
+                        </div>
+                        <div class="bubble-element Text cmaNlaI"></div>
+                    </div>
+                    <div class="bubble-element Group cmaNlaJ bubble-r-container flex row">
+                        <div class="bubble-element Group cmaNlb bubble-r-container flex row">
+                            <div style="max-height: unset;" class="bubble-element Image cmaNlf"><img
+                                    src="https___99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io_f1701256302456x681479036775907100_Uniswap.png">
+                            </div>
+                            <div class="bubble-element Group cmaNlg bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNlh bubble-r-container flex column">
+                                    <div class="bubble-element Text cmaNll"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bubble-element Group cmaNlaN bubble-r-container flex row">
+                            <div style="max-height: unset;" class="bubble-element Image cmaNlaO"><img
+                                    src="download%20(1).svg"></div>
+                            <div class="bubble-element Group cmaNlaP bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNlaT bubble-r-container flex column"></div>
+                            </div>
+                        </div>
+                        <div class="bubble-element Group cmaNlaU bubble-r-container flex row"
+                            style="background: transparent;">
+                            <div style="max-height: unset;" class="bubble-element Image cmaNlaV"><img
+                                    src="Binance%20Smart%20Chain.svg"></div>
+                            <div class="bubble-element Group cmaNlaZ bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNla bubble-r-container flex column"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bubble-element Group cmaNlm bubble-r-container flex row">
+                        <div class="bubble-element Group cmaNlz bubble-r-container flex row">
+                            <div style="max-height: unset;" class="bubble-element Image cmaNmaD"><img
+                                    src="ethereum-logo-portrait-black.svg"></div>
+                            <div class="bubble-element Group cmaNmaE bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNmaF bubble-r-container flex column">
+                                    <div class="bubble-element Text cmaNmaJ"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="max-height: unset;" class="bubble-element Image cmaNmo"><img
+                                src="https___99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io_f1701256645747x453244985413813600_icon-round-512.png">
+                        </div>
+                        <div class="bubble-element Group cmaNlt bubble-r-container flex row"
+                            style="background: transparent;">
+                            <div style="max-height: unset;" class="bubble-element Image cmaNoaT"><img
+                                    src="https___99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io_f1702992365989x815393641687646000_Bybit.png">
+                            </div>
+                            <div class="bubble-element Group cmaNlx bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNly bubble-r-container flex column"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bubble-element Group cmaNmaK bubble-r-container flex row">
+                        <div class="bubble-element Group cmaNmaX bubble-r-container flex row">
+                            <div style="max-height: unset;" class="bubble-element Image cmaNpaV"><img
+                                    src="Blue_TF_Logotype.svg"></div>
+                            <div class="bubble-element Group cmaNmb bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNmc bubble-r-container flex column">
+                                    <div class="bubble-element Text cmaNmd"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bubble-element Group cmaNmaL bubble-r-container flex row">
+                            <div class="bubble-element Group cmaNmaP bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNmaQ bubble-r-container flex column"></div>
+                            </div>
+                        </div>
+                        <div style="max-height: unset;" class="bubble-element Image cmaNsaD"><img
+                                src="https___99524017d4a58f07329dbdbb270cdb07.cdn.bubble.io_f1702992316284x466973633727615360_Kucoin.png">
+                        </div>
+                        <div class="bubble-element Group cmaNmaR bubble-r-container flex row"
+                            style="background: transparent;">
+                            <div class="bubble-element Group cmaNmaV bubble-r-container flex row">
+                                <div class="bubble-element Group cmaNmaW bubble-r-container flex column"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bubble-element Group cmaMss bubble-r-container flex row">
+                    <div style="gap: 40px;" class="bubble-element Group cmaMsu bubble-r-container flex row">
+                        <div style="max-height: unset;"
+                            class="bubble-element Group cmaMsv bubble-r-container flex column">
+                            <div style="max-width: unset; max-height: unset;" class="bubble-element Text cmaMsw">Let's
+                                connect</div>
+                            <div class="bubble-element Group cmaMsy bubble-r-container flex column">
+                                <div class="bubble-element Text cmaMsz">Your email</div><input
+                                    style="max-width: unset; background-color: rgb(255, 255, 255); box-shadow: rgba(233, 227, 227, 0.1) 2px 2px 8px 0px;"
+                                    class="bubble-element Input cmaMtaA a1703573595754x6104" type="email" placeholder=""
+                                    value="">
+                                <div class="bubble-element Text cmaMtaB">Your message</div><textarea
+                                    class="bubble-element MultiLineInput a1703573595754x6104"
+                                    style="align-self: flex-start; min-width: 0px; order: 5; min-height: 130px; flex-grow: 0; flex-shrink: 0; width: calc(100% - 0px); margin: 0px; z-index: 16; border: medium; background-color: rgb(255, 255, 255); overflow: hidden; overflow-wrap: break-word; border-radius: 18px; box-shadow: rgba(233, 227, 227, 0.1) 2px 2px 8px 0px; font-family: &quot;Poppins&quot;; font-size: 16px; font-weight: 400; color: rgb(0, 0, 0); line-height: 1.4; padding: 15px 20px 7px; opacity: 1; transition: border-color 200ms ease 0s, box-shadow 200ms ease 0s; height: 130px;"
+                                    data-gramm_editor="false" maxlength="" placeholder="Write message"
+                                    rows="1"></textarea>
+                            </div>
+                            <div class="clickable-element bubble-element Group cmaMtc0 bubble-r-container flex row"
+                                style="background-color: rgb(39, 39, 39);">
+                                <div class="bubble-element Text cmaMte0">Send message</div>
+                                <div class="bubble-element Image cmaMtf0"><img src="Group%203%20(11).svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bubble-element Group cmaNaCm0 bubble-r-container flex column"
+            style="background-color: rgb(39, 39, 39);">
+            <div class="bubble-element Group cmaNaEaE bubble-r-container flex row">
+                <div class="bubble-element Group cmaNaDaR0 bubble-r-container relative">
+                    <div style="max-width: unset; max-height: unset;" class="bubble-element Text cmaNaDaS0">Volu<font
+                            color="#60ff95">Mint</font>
+                    </div>
+                    <div class="bubble-element Group cmaNaOaV bubble-r-container flex row"></div>
+                </div>
+                <div class="bubble-element Group cmaNaCo0 bubble-r-container flex row">
+                    <div class="bubble-element Group cmaNaCp0 bubble-r-container flex column">
+                        <div class="bubble-element Text cmaNaCq0">
+                            <div>$vMINT TOKEN</div>
+                        </div>
+                        <div class="bubble-element Text cmaNaCr0 clickable-element" style="">ETH Contract:
+                            0xd7b2c1a7f3c67fb0ea57a7ef29bc1f18d7be3195</div>
+                        <div class="bubble-element Text cmaNaGd0 clickable-element">DEX:
+                            https://www.dextools.io/app/en/ether/pair-explorer/0x4ed8973e1d76c41f6dd82673f43b4ad85ed04123
+                        </div>
+                        <div class="bubble-element Text cmaNaCs0 clickable-element"></div>
+                    </div>
+                    <div class="bubble-element Group cmaNaFf0 bubble-r-container flex column">
+                        <div class="bubble-element Text cmaNaFh0">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="bubble-element Group cmaNaCu0 bubble-r-container flex column">
+                        <div class="bubble-element Text cmaNaCv0">
+                            <div>Social</div>
+                        </div>
+                        <div class="bubble-element Group cmaNaCy0 bubble-r-container flex row">
+                            <div class="bubble-element Group cmaNaDaJ0 bubble-r-container relative"></div>
+                            <div class="bubble-element Group cmaNaDaC0 bubble-r-container relative"></div>
+                            <div class="bubble-element Group cmaNaCz0 bubble-r-container relative"></div>
+                            <div class="bubble-element Group cmaNaDaF0 bubble-r-container relative"><button
+                                    class="bubble-element ionic-IonicIcon"
+                                    style="place-self: center; min-width: 25px; max-width: 25px; min-height: 25px; max-height: 25px; width: 25px; height: 25px; margin: 0px; z-index: 0; padding: 0px; text-align: center; background: none; border: medium; cursor: inherit; color: rgb(224, 223, 230); border-radius: 4px;"><svg
+                                        viewBox="0 -18 50 50" style="width: 100%; height: 100%;">
+                                        <text class="ionicons" x="50%" y="50%" text-anchor="middle"
+                                            style="font-size: 50px;fill: currentColor;">
+                                            
+                                        </text>
+                                    </svg></button><a class="bubble-element Link cmaNaDaH0 clickable-element"
+                                    target="_blank" href="https://x.com/volumint">
+                                    <div></div>
+                                </a></div>
+                        </div><button class="clickable-element bubble-element Icon cmaNdaP" style="display: flex;"
+                            tabindex=""><svg viewBox="0 -18 50 50" style="width: 100%; height: 100%;"><text class="fa"
+                                    x="50%" y="50%" text-anchor="middle"
+                                    style="font-size: 50px; fill: currentcolor;"></text></svg></button>
+                    </div>
+                </div>
+            </div><a class="bubble-element Link cmaNaIk clickable-element" target="_blank" href="">Built with ❤️
+                &nbsp;ShimaCorp.</a>
+        </div>
+    </div>
+    <div style="display: none; background-color: rgb(255, 250, 249); box-shadow: rgba(255, 124, 96, 0.04) -2px 2px 16px 0px;"
+        class="bubble-element FloatingGroup cmaNaHd0 floating-group bubble-r-container flex column"><button
+            class="bubble-element ionic-IonicIcon clickable-element"
+            style="align-self: flex-end; min-width: 18px; max-width: 18px; order: 2; min-height: 23px; max-height: 23px; height: 23px; flex-grow: 1; width: 18px; margin: 0px; padding: 0px; text-align: center; background: none; border: medium; cursor: inherit;"></button>
+    </div>
+    <div id="bubble-icon-retriever" style="display: none; position: absolute;" class="ion-android-done-all"></div>
+    <div class="page-is-loaded"></div>
+</body>
+
+</html>
